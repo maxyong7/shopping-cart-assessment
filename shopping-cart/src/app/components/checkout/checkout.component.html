@@ -1,0 +1,61 @@
+<div class="page" *ngIf="cartedItemsList.length != 0;else noContent">
+    <h1 id="title">Items</h1>
+
+
+    <div class="container" *ngFor="let items of cartedItemsList">
+        <mat-card class="item-card">
+            <img src="{{items.image}}" alt="image" id="item-image">
+
+            <div id="item-info">
+                <span id="item-info-name">{{items.name}}</span>
+                <br>
+                Quantity: {{items.quantity}}
+                <br>
+            </div>
+
+            <button id="item-button" mat-button color="warn" (click)="clearItem(items)">Remove</button>
+        </mat-card>
+        <mat-divider></mat-divider>
+    </div>
+
+    <div class="email">
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+    </div>
+
+
+
+    <div class="button-container">
+        <button class="action-button" mat-raised-button color="warn" (click)="clearAllItems()">Clear All</button>
+        <button class="action-button" mat-raised-button color="primary" [disabled]="email.invalid" (click)="onSubmit()"
+            routerLink="/confirmation">Submit</button>
+    </div>
+
+</div>
+
+<ng-template class="page" #noContent>
+    <h1 id="title">Items
+    </h1>
+    <div class="container">
+
+        <mat-card class="item-card">
+
+            <mat-card-subtitle id="item-info">
+
+                No item in cart...
+            </mat-card-subtitle>
+        </mat-card>
+    </div>
+
+</ng-template>
+
+
+<div class="button">
+    <button mat-fab color="primary" routerLink="/">
+        <mat-icon>home</mat-icon>
+    </button>
+
+</div>

@@ -1,0 +1,116 @@
+#item-image {
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#item-info {
+    padding-left: 10px;
+    padding-right: 50px;
+    align-self: center;
+    text-align: justify;
+    margin: auto;
+
+}
+
+#item-button {
+    height: 100%;
+}
+
+.item-card {
+    align-items: center;
+    display: flex;
+    height: auto;
+    width: auto;
+    max-width: 450px;
+    max-height: 200px;
+    justify-content: space-between;
+
+}
+
+.page {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#item-info-name {
+    font-size: medium;
+    font-weight: 500;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.action-button {
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    width: max-content;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+#title {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.button {
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 425px) {
+    .container {
+        display: flex;
+    }
+
+    #item-info {
+        align-self: center;
+        text-align: center;
+        padding: 0px
+    }
+
+    .item-card {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+        padding: 0
+    }
+
+    #item-button {
+        padding: 0
+    }
+
+    .button-container {
+        display: block;
+    }
+
+    .action-button {
+        left: 10.5%;
+        margin: 5px auto;
+        width: 80%;
+        height: 50px
+    }
+}

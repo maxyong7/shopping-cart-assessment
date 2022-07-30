@@ -1,0 +1,13 @@
+<mat-card class="item-card">
+    <div class="card-img-div">
+        <img src="{{shopItems.image}}" id="image" alt="image">
+    </div>
+    <mat-card-title id="title">{{shopItems.name}}</mat-card-title>
+    <mat-card-content>
+
+        <p class="card-text">{{shopItems.description}}</p>
+    </mat-card-content>
+    <mat-card-actions class="action">
+        <button (click)="updateCart()" mat-button color="primary" id="cart-button">Add to Cart</button>
+    </mat-card-actions>
+</mat-card>

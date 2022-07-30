@@ -1,0 +1,48 @@
+#title {
+    margin-top: 0;
+    text-align: center;
+}
+
+.item-card {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+
+
+#cart-button {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .card-text {
+        text-align: center;
+    }
+
+    .card-img-div {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    #title {
+        margin-top: 5px;
+    }
+
+    .action {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    #cart-button {
+        background-color: #3f51b5;
+        color: white;
+        width: 75%;
+        max-width: 200px;
+    }
+
+    .item-card {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}

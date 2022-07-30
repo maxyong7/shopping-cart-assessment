@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "name": "Shoe",
+      "description": "This is a shoe",
+      "quantity": 0,
+      "inCart": false,
+      "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80&h=150"
+    },
+    {
+      "id": 2,
+      "name": "Shoe2",
+      "description": "This is a shoe2",
+      "quantity": 0,
+      "inCart": false,
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80&h=150"
+    },
+    {
+      "id": 3,
+      "name": "Shoe3",
+      "description": "This is a shoe3",
+      "quantity": 0,
+      "inCart": false,
+      "image": "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80&h=150"
+    }
+  ]
+}
