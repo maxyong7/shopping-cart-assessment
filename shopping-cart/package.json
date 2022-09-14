@@ -4,12 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build gh-pages -d dist",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "server": "json-server --watch db.json --port 5000"
   },
   "private": true,
+  "homepage": "https://maxyong7.github.io/shopping_cart",
   "dependencies": {
     "@angular/animations": "^14.0.0",
     "@angular/cdk": "^14.1.0",
@@ -21,6 +22,7 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "gh-pages": "^4.0.0",
     "json-server": "^0.17.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
